@@ -1,5 +1,5 @@
 {% set name = "joypy" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 987fbd9cca4f8443e300ec66cd09953a92a7a83b4b834b6031e1a22150c253e4
+  sha256: a12598e75f4d40d72a26f7eeae6b74f4ced05c49af147ace8e3a229ab7b20395
 
 build:
   number: 0
