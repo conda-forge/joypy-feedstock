@@ -5,11 +5,11 @@ Home: http://github.com/sbebo/joypy
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/joypy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Joyplots in python
 
-
+Development: http://github.com/sbebo/joypy
 
 Current build status
 ====================
