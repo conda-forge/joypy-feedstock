@@ -1,23 +1,23 @@
 {% set name = "joypy" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a12598e75f4d40d72a26f7eeae6b74f4ced05c49af147ace8e3a229ab7b20395
+  sha256: 55d268386a1d2d974aa90cbf6dcca3ad943d17075987dfb8c4a772852fbe79c7
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
-  host:    
+  host:
     - pip
-    - python    
+    - python
   run:
     - matplotlib-base
     - numpy
@@ -33,7 +33,7 @@ about:
   home: http://github.com/sbebo/joypy
   license: MIT
   license_file: LICENSE
-  summary: Joyplots in python  
+  summary: Joyplots in python
   dev_url: http://github.com/sbebo/joypy
 
 extra:
